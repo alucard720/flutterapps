@@ -13,24 +13,15 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              Container(
-                height: 100.0,
-                width:100.0,
-                color: Colors.white,
-                child: Text('Block1')
-              ),
-              Container(
-                  height: 100.0,
-                  width:100.0,
-                  color: Colors.white,
-                  child: Text('Block1')
+              CircleAvatar(
+                radius: 40.0,
+                backgroundColor: Colors.blue[200],
+                backgroundImage: AssetImage('images/bianca.jpg'),
               ),
             ],
           ),
         ),
-        ),
-
+      ),
     );
-
   }
 }
